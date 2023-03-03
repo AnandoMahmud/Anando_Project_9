@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 0.6rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 30px;
+}
+.website{
+    width: 100vw;
+    width: 100svw;
+    height: 100vh;
+    height: 100svh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(IMG-13.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    width: 100svw;
+    height: 12vh;
+    height: 12svh;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+}
+.nav .name h2{
+    font-size: 5vmin;
+    letter-spacing: 0.5px;
+    color: black;
+}
+samp{
+    color: #ff5800;
+}
+.nav .navber ul{
+    display: flex;
+    gap: 1rem;
+}
+.nav .navber ul li a{
+    color: black;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+.nav .navber ul li a:hover{
+    background-color: black;
+    color: white;
+}
+.nav .navicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.nav .navicon a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.6rem;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 1.6rem;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.nav .navicon a:hover{
+    background-color: #000000;
+    color: white;
+}
+.title .titletext h1{
+    text-align: center;
+    color: white;
+    font-size: 11vmin;
+    text-shadow: 2px 1px 3px #000000;
+}
+.title .titletext h2{
+    text-align: center;
+    color: white;
+    font-size: 6vmin;
+    font-weight: 400;
+    text-shadow: 2px 1px 3px #000000;
+}
+@media(max-width:420px){
+    .website{
+        background-size: cover;
+        background-position: center;
+    }
+    .nav{
+        padding: 0;
+        justify-content: center;
+    }
+    .nav .name h2{
+        font-size: 38px;
+    }
+    .nav .navber{
+        display: none;
+    }
+    .nav .navicon{
+        display: none;
+    }
+    .title .titletext h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+    .title .titletext h2{
+        font-size: 5.2vmin;
+        letter-spacing: 1px;
+    }
+}
+/* End */
+.about{
+    width: 100vw;
+    width: 100svw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 0;
+}
+.about .aboutsome{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 1%;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about .aboutsome .aboutimg img{
+    border-radius: 12px;
+}
+.about .aboutsome .abouttext{
+    width: 500px;
+}
+.about .aboutsome .abouttext h2{
+    font-size: 6.5vmin;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #3a3a3a;
+    margin-bottom: 15px;
+}
+.about .aboutsome .abouttext p{
+    font-size: medium;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: justify;
+    color: black;
+    margin-bottom: 15px;
+    padding-right: 4%;
+}
+.about .aboutsome .abouttext .aboutbtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 4%;
+}
+.about .aboutsome .abouttext .aboutbtn h5{
+    font-size: small;
+    letter-spacing: 0.5px;
+    color: #3a3a3a;
+    font-weight: 400;
+}
+.about .aboutsome .abouttext .aboutbtn a{
+    font-size: medium;
+    letter-spacing: 0.5px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border: 3px solid black;
+    padding: 0.4rem 0.8rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.about .aboutsome .abouttext .aboutbtn a:hover{
+    background-color: transparent;
+    color: #000;
+}
+@media(max-width:420px){
+    .about{
+        padding: 6rem 0;
+    }
+    .about .aboutsome{
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .about .aboutsome .abouttext{
+        width: 310px;
+    }
+}
+/* End */
+.services{
+    width: 100vw;
+    width: 100svw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 0;
+}
+.services .servicebox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.services .servicebox .serviceboxes{
+    width: 350px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.services .servicebox .serviceboxes img{
+    width: 349px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.services .servicebox .serviceboxes .sertext h2{
+    font-size: 4vmin;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-left: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #3a3a3a;
+    text-transform: capitalize;
+}
+.services .servicebox .serviceboxes .sertext p{
+    font-size: medium;
+    margin-left: 1.2rem;
+    line-height: 25px;
+    margin-right: 1.2rem;
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+.services .servicebox .serviceboxes .sertext .serbtn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.services .servicebox .serviceboxes .sertext .serbtn h5{
+    font-size: small;
+    letter-spacing: 0.5px;
+    color: #3a3a3a;
+    font-weight: 400;
+}
+.services .servicebox .serviceboxes .sertext .serbtn a{
+    font-size: medium;
+    letter-spacing: 0.5px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border: 3px solid black;
+    padding: 0.4rem 0.8rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.services .servicebox .serviceboxes .sertext .serbtn a:hover{
+    background-color: transparent;
+    color: #000;
+}
+@media(max-width:420px){
+    .services{
+        padding: 6rem 0;
+    }
+    .services .servicebox{
+        gap: 3rem;
+    }
+    .services .servicebox .serviceboxes{
+        width: 300px;
+    }
+    .services .servicebox .serviceboxes img{
+        width: 299px;
+    }
+    .services .servicebox .serviceboxes .sertext h2{
+        font-size: 18px;
+        margin-top: 0.5rem;
+    }
+    .services .servicebox .serviceboxes .sertext p{
+        font-size: 14px;
+    }
+    .services .servicebox .serviceboxes .sertext .serbtn h5{
+        font-size: small;
+    }
+    .services .servicebox .serviceboxes .sertext .serbtn a{
+        font-size: 14px;
+    }
+}
+/* End */
+.skills{
+    width: 100vw;
+    width: 100svw;
+    height: fit-content;
+    padding: 8% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills .skillsome{
+    max-width: 920px;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 1.5%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.skills .skillsome .skillimg img{
+    border-radius: 15px;
+}
+.skills .skillsome .skilltext h2{
+    font-size: 6.5vmin;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #3a3a3a;
+    margin-bottom: 15px;
+}
+.skills .skillsome .skilltext p{
+    font-size: medium;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: justify;
+    color: black;
+    margin-bottom: 15px;
+    padding-right: 4%;
+}
+.skills .skillsome .skilltext .skillbtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 4%;
+}
+.skills .skillsome .skilltext .skillbtn h5{
+    font-size: small;
+    letter-spacing: 0.5px;
+    color: #3a3a3a;
+    font-weight: 400;
+}
+.skills .skillsome .skilltext .skillbtn a{
+    font-size: medium;
+    letter-spacing: 0.5px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border: 3px solid black;
+    padding: 0.4rem 0.8rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.skills .skillsome .skilltext .skillbtn a:hover{
+    background-color: transparent;
+    color: #000;
+}
+@media(max-width:420px){
+    .skills{
+        padding: 6rem 0;
+    }
+    .skills .skillsome{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+}
+/* End */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    background-color: #46505f;
+    padding: 1.2% 12%;
+}
+.footer h5{
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: white;
+}
+.footer a{
+    color: white;
+    background-color: #ff5800;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+@media(max-width:420px){
+    .footer{
+        padding: 2rem 1rem;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer h5{
+        line-height: 30px;
+        font-size: medium;  
+    }
+    .footer a{
+        width: 50px;
+        height: 50px;
+    }
+    .footer a ion-icon{
+        font-size: 24px;
+    }
+}
+/* end */
